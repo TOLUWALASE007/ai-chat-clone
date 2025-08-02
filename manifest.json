@@ -1,0 +1,15 @@
+{
+  "short_name": "AI Chat Clone",
+  "name": "AI Chat Clone - ChatGPT-like Interface",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#343541",
+  "background_color": "#343541"
+} 

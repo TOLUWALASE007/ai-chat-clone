@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ai-chat-clone/static/css/main.7e286fee.css",
+    "main.js": "/ai-chat-clone/static/js/main.24aac90a.js",
+    "index.html": "/ai-chat-clone/index.html",
+    "main.7e286fee.css.map": "/ai-chat-clone/static/css/main.7e286fee.css.map",
+    "main.24aac90a.js.map": "/ai-chat-clone/static/js/main.24aac90a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e286fee.css",
+    "static/js/main.24aac90a.js"
+  ]
+}
