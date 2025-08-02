@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #343541;
+    color: #ececf1;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply p-4 border-b border-chat-border;
+  }
+  
+  .user-message {
+    @apply bg-chat-bg;
+  }
+  
+  .assistant-message {
+    @apply bg-chat-sidebar;
+  }
+  
+  .message-content {
+    @apply max-w-3xl mx-auto flex gap-4;
+  }
+  
+  .message-avatar {
+    @apply w-8 h-8 rounded-sm flex-shrink-0;
+  }
+  
+  .message-text {
+    @apply flex-1 leading-6;
+  }
+  
+  .chat-input-container {
+    @apply fixed bottom-0 left-0 right-0 bg-chat-bg border-t border-chat-border p-4;
+  }
+  
+  .chat-input-wrapper {
+    @apply max-w-3xl mx-auto relative;
+  }
+  
+  .chat-input {
+    @apply w-full p-4 pr-12 bg-chat-input border border-chat-border rounded-lg text-chat-text placeholder-chat-text-secondary resize-none focus:outline-none focus:border-chat-accent;
+  }
+  
+  .send-button {
+    @apply absolute right-2 bottom-2 p-2 text-chat-accent hover:text-chat-accent-hover transition-colors;
+  }
+  
+  .loading-dots {
+    @apply flex space-x-1;
+  }
+  
+  .loading-dot {
+    @apply w-2 h-2 bg-chat-text-secondary rounded-full animate-pulse-slow;
+  }
+  
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-64 bg-chat-sidebar border-r border-chat-border p-4;
+  }
+  
+  .main-content {
+    @apply ml-64 h-screen flex flex-col;
+  }
+  
+  .chat-container {
+    @apply flex-1 overflow-y-auto pb-32;
+  }
+  
+  .new-chat-button {
+    @apply w-full p-3 border border-chat-border rounded-lg text-chat-text hover:bg-chat-input transition-colors flex items-center gap-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565869;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+} 
